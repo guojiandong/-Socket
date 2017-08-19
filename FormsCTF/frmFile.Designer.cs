@@ -1,6 +1,6 @@
 ﻿namespace FormsCTF
 {
-    partial class frmControl
+    partial class frmFile
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(91, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            // 
-            // frmControl
+            // frmFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 506);
-            this.Controls.Add(this.label1);
-            this.Name = "frmControl";
-            this.Text = "frmControl";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmControl_FormClosed);
-            this.Load += new System.EventHandler(this.frmControl_Load);
+            this.ClientSize = new System.Drawing.Size(961, 600);
+            this.Name = "frmFile";
+            this.Text = "文件夹及文件操作";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
     }
 }

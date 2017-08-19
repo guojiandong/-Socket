@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleThread", "ConsoleThr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsCTF", "FormsCTF\FormsCTF.csproj", "{3AF821DC-FE29-4BD2-87CB-EB441FA9A224}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GyLib", "GyLib\GyLib.csproj", "{C8C80B4B-5038-4CD2-83D9-FE2C75F3CBDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3AF821DC-FE29-4BD2-87CB-EB441FA9A224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AF821DC-FE29-4BD2-87CB-EB441FA9A224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AF821DC-FE29-4BD2-87CB-EB441FA9A224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C80B4B-5038-4CD2-83D9-FE2C75F3CBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C80B4B-5038-4CD2-83D9-FE2C75F3CBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C80B4B-5038-4CD2-83D9-FE2C75F3CBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C80B4B-5038-4CD2-83D9-FE2C75F3CBDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
