@@ -9,7 +9,7 @@ namespace GyLib.IO.FileHelper
 {
     public static class GyFile
     {
-        #region 获取应用程序的当前工作目录
+        #region 获取应用程序各种目录
         /// <summary>
         /// 获取应用程序的当前工作目录
         /// </summary>
@@ -18,6 +18,39 @@ namespace GyLib.IO.FileHelper
         {
             return Path.Combine(Directory.GetCurrentDirectory());
         }
+        /// <summary>
+        /// 获取程序的基目录
+        /// </summary>
+        /// <returns></returns>
+        public static string GetBaseDir()
+        {
+            return AppDomain.CurrentDomain.BaseDirectory;
+        }
+        /// <summary>
+        /// 获取模块的完整路径
+        /// </summary>
+        /// <returns></returns>
+        public static string GetModuleDir()
+        {
+            return System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
+        }
+        /// <summary>
+        /// 获取和设置当前目录(该进程从中启动的目录)的完全限定目录
+        /// </summary>
+        /// <returns></returns>
+        public static string GetCurrentCompleteDir()
+        {
+            return Environment.CurrentDirectory;
+        }
+        /// <summary>
+        /// 获取和设置包括该应用程序的目录的名称
+        /// </summary>
+        /// <returns></returns>
+        public static string GetAppDirName()
+        {
+            return AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
+        }
+        
         #endregion
         #region 创建一个新文件
         /// <summary>

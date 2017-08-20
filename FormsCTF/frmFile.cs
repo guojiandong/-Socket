@@ -17,14 +17,9 @@ namespace FormsCTF
         public frmFile()
         {
             InitializeComponent();
+            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // 获取和设置包括该应用程序的目录的名称。
-            string path = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
-            CreateFile(path+@".txt");
-        }
         public void CreateFile(string path)
         {
             GyFile.CreateFile(path);
