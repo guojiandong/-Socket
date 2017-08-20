@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IO\FileHelper\GyFile.cs" />
+    <Compile Include="IO\FileHelper\GyFileInfo.cs" />
     <Compile Include="NetWork\GyFtpWeb.cs" />
     <Compile Include="IO\GyFile.cs" />
     <Compile Include="IO\GyZip.cs" />
