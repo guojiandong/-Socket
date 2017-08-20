@@ -29,22 +29,59 @@
         private void InitializeComponent()
         {
             this.btnTestThread = new System.Windows.Forms.Button();
+            this.btnTestThread02 = new System.Windows.Forms.Button();
+            this.btnTestThread03 = new System.Windows.Forms.Button();
+            this.btnTestThread04 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTestThread
             // 
-            this.btnTestThread.Location = new System.Drawing.Point(452, 30);
+            this.btnTestThread.Location = new System.Drawing.Point(42, 36);
             this.btnTestThread.Name = "btnTestThread";
             this.btnTestThread.Size = new System.Drawing.Size(120, 61);
             this.btnTestThread.TabIndex = 0;
-            this.btnTestThread.Text = "测试线程";
+            this.btnTestThread.Text = "测试线程1";
             this.btnTestThread.UseVisualStyleBackColor = true;
+            this.btnTestThread.Click += new System.EventHandler(this.btnTestThread_Click);
+            // 
+            // btnTestThread02
+            // 
+            this.btnTestThread02.Location = new System.Drawing.Point(222, 36);
+            this.btnTestThread02.Name = "btnTestThread02";
+            this.btnTestThread02.Size = new System.Drawing.Size(120, 61);
+            this.btnTestThread02.TabIndex = 1;
+            this.btnTestThread02.Text = "测试线程2";
+            this.btnTestThread02.UseVisualStyleBackColor = true;
+            this.btnTestThread02.Click += new System.EventHandler(this.btnTestThread02_Click);
+            // 
+            // btnTestThread03
+            // 
+            this.btnTestThread03.Location = new System.Drawing.Point(406, 36);
+            this.btnTestThread03.Name = "btnTestThread03";
+            this.btnTestThread03.Size = new System.Drawing.Size(120, 61);
+            this.btnTestThread03.TabIndex = 2;
+            this.btnTestThread03.Text = "测试线程3";
+            this.btnTestThread03.UseVisualStyleBackColor = true;
+            this.btnTestThread03.Click += new System.EventHandler(this.btnTestThread03_Click);
+            // 
+            // btnTestThread04
+            // 
+            this.btnTestThread04.Location = new System.Drawing.Point(594, 36);
+            this.btnTestThread04.Name = "btnTestThread04";
+            this.btnTestThread04.Size = new System.Drawing.Size(120, 61);
+            this.btnTestThread04.TabIndex = 3;
+            this.btnTestThread04.Text = "测试线程3";
+            this.btnTestThread04.UseVisualStyleBackColor = true;
+            this.btnTestThread04.Click += new System.EventHandler(this.btnTestThread04_Click);
             // 
             // frmFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 600);
+            this.Controls.Add(this.btnTestThread04);
+            this.Controls.Add(this.btnTestThread03);
+            this.Controls.Add(this.btnTestThread02);
             this.Controls.Add(this.btnTestThread);
             this.Name = "frmFile";
             this.Text = "文件夹及文件操作";
@@ -55,5 +92,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnTestThread;
+        private System.Windows.Forms.Button btnTestThread02;
+        private System.Windows.Forms.Button btnTestThread03;
+        private System.Windows.Forms.Button btnTestThread04;
     }
 }

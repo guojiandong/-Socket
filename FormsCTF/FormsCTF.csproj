@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutomateThread.cs" />
     <Compile Include="frmControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +59,41 @@
     <Compile Include="frmFile.Designer.cs">
       <DependentUpon>frmFile.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThread02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThread02.Designer.cs">
+      <DependentUpon>frmThread02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThread03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThread03.Designer.cs">
+      <DependentUpon>frmThread03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThread04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThread04.Designer.cs">
+      <DependentUpon>frmThread04.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\ThreadMulti.cs" />
     <EmbeddedResource Include="frmControl.resx">
       <DependentUpon>frmControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFile.resx">
       <DependentUpon>frmFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThread02.resx">
+      <DependentUpon>frmThread02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThread03.resx">
+      <DependentUpon>frmThread03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThread04.resx">
+      <DependentUpon>frmThread04.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

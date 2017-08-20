@@ -19,14 +19,18 @@ namespace FormsCTF
         }
         private void frmControl_Load(object sender, EventArgs e)
         {
-            new Thread(() => {
+           Thread th=new Thread(() => {
                 for (int i = 0; i < 10000; i++)
                 {
-                    SetLable(label1, i.ToString(),new dg((string str)=> {
-                        label1.Text = str;
-                    }));
-                }
-            }).Start();
+                   SetLable(label1, i.ToString(), new dg((string str) => {
+                       //处理当前在消息队列中的所有 Windows 消息
+                       Application.DoEvents();
+                       label1.Text = str;
+                   }));
+               }
+            });
+            th.IsBackground = true;
+            th.Start();
         }
         public delegate void dg(string str);
         public void SetLable(object obj,string value,dg dglabl=null)
@@ -37,12 +41,8 @@ namespace FormsCTF
                 Label labl = obj as Label;
                 if (labl.InvokeRequired)
                 {
-                    //Delegate dgg = new dg((string str)=> {
-                    //    labl.Text = str;
-                    //});
                     if (dglabl != null)
                     {
-                        Delegate dggg = new dg(dglabl);
                         labl.Invoke(dglabl, value);
                     }
                     else
@@ -91,7 +91,11 @@ namespace FormsCTF
         }
         private void frmControl_FormClosed(object sender, FormClosedEventArgs e)
         {
-            System.Environment.Exit(0);
+            //this.Close();子窗体不能使用这个方法 不然会出现死循环
+        }
+
+        private void frmControl_FormClosing(object sender, FormClosingEventArgs e)
+        {
         }
     }
 }
