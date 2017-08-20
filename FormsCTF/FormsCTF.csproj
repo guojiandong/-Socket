@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutomateThread.cs" />
+    <Compile Include="DownLoadQueueThread.cs" />
     <Compile Include="frmControl.cs">
       <SubType>Form</SubType>
     </Compile>

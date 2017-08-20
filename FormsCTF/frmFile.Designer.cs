@@ -32,6 +32,7 @@
             this.btnTestThread02 = new System.Windows.Forms.Button();
             this.btnTestThread03 = new System.Windows.Forms.Button();
             this.btnTestThread04 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTestThread
@@ -74,11 +75,21 @@
             this.btnTestThread04.UseVisualStyleBackColor = true;
             this.btnTestThread04.Click += new System.EventHandler(this.btnTestThread04_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(76, 193);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
             // frmFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 600);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTestThread04);
             this.Controls.Add(this.btnTestThread03);
             this.Controls.Add(this.btnTestThread02);
@@ -86,6 +97,7 @@
             this.Name = "frmFile";
             this.Text = "文件夹及文件操作";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button btnTestThread02;
         private System.Windows.Forms.Button btnTestThread03;
         private System.Windows.Forms.Button btnTestThread04;
+        private System.Windows.Forms.Label label1;
     }
 }

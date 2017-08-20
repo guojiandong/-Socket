@@ -49,6 +49,7 @@
     <Compile Include="IO\GyFile.cs" />
     <Compile Include="IO\GyZip.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thread\QueueThreadBase.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
