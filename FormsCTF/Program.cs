@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FormsCTF.FDelegation;
+using FormsCTF.FDependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace FormsCTF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFile());
+            Application.Run(new FormLaiKey());
         }
     }
 }

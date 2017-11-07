@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsProxyConnection.cs" />
+    <Compile Include="Delegation.cs" />
     <Compile Include="DownLoadState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

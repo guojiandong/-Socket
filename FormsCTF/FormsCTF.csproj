@@ -47,6 +47,38 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DownLoadQueueThread.cs" />
+    <Compile Include="FDelegation\Server.cs" />
+    <Compile Include="FDelegation\FDeClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDelegation\FDeClient.Designer.cs">
+      <DependentUpon>FDeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDelegation\FDeServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDelegation\FDeServer.Designer.cs">
+      <DependentUpon>FDeServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDependencyInjection\FIGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDependencyInjection\FIGame.Designer.cs">
+      <DependentUpon>FIGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDependencyInjection\Monster.cs" />
+    <Compile Include="FormFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFiles.Designer.cs">
+      <DependentUpon>FormFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaiKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaiKey.Designer.cs">
+      <DependentUpon>FormLaiKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +90,12 @@
     </Compile>
     <Compile Include="frmFile.Designer.cs">
       <DependentUpon>frmFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThread02.cs">
       <SubType>Form</SubType>
@@ -77,14 +115,38 @@
     <Compile Include="frmThread04.Designer.cs">
       <DependentUpon>frmThread04.cs</DependentUpon>
     </Compile>
+    <Compile Include="FTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTextBox.Designer.cs">
+      <DependentUpon>FTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ThreadMulti.cs" />
+    <EmbeddedResource Include="FDelegation\FDeClient.resx">
+      <DependentUpon>FDeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDelegation\FDeServer.resx">
+      <DependentUpon>FDeServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDependencyInjection\FIGame.resx">
+      <DependentUpon>FIGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFiles.resx">
+      <DependentUpon>FormFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaiKey.resx">
+      <DependentUpon>FormLaiKey.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmControl.resx">
       <DependentUpon>frmControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFile.resx">
       <DependentUpon>frmFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThread02.resx">
       <DependentUpon>frmThread02.cs</DependentUpon>
@@ -94,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThread04.resx">
       <DependentUpon>frmThread04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTextBox.resx">
+      <DependentUpon>FTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,6 +188,7 @@
       <Name>GyLib</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
