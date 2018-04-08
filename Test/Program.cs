@@ -14,7 +14,7 @@ namespace Test
             //Task<string> str = Thread01.DownloadStringWithRetries("http://www.cnblogs.com/heyuquan/archive/2012/12/23/threadPool-manager.html");
 
 
-            //string htmlStr = Thread01.HttpGet("http://www.cnblogs.com/heyuquan/archive/2012/12/23/threadPool-manager.html");
+            string htmlStr = Thread01.HttpGet("http://www.cnblogs.com/heyuquan/archive/2012/12/23/threadPool-manager.html");
 
 
             Task<string> t1 = Task.Factory.StartNew(() => "测试");
